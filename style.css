@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    margin: 1rem 1.5rem;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.title {
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 4px 5px rgba(0,0,0,0.65);
+    font-size: 2rem;
+    color: #222;
+    padding: 1rem 1.5rem;
+}
+
+.title span {
+    color: #5585b5;
+}
+
+aside .sidebar-header {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+aside .sidebar-header button {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: -5px;
+    color: #e71111;
+}
+
+aside .sidebar-header button:hover {
+    background-color: #e71111;
+    color: #fff;
+}
+
+aside .links, aside .social-media{
+    list-style: none;
+}
+
+aside .links {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+aside .links li a{
+    color: #666;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem;
+    display: block;
+    transition: padding-left 0.3s ease;
+}
+
+aside .links li a:hover {
+    background-color: #6eabe9aa;
+    padding-left: 1.8rem;
+    transition: padding-left 0.3s ease;
+}
+
+
+aside .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    margin-left: -1.5rem;
+}
+
+aside .social-media li a {
+    color: #5585b5;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+aside .social-media li a:hover {
+    background-color: #ccc;
+    font-size: 2rem;
+    padding: 0.3;
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
